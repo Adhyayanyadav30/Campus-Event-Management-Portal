@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Campus Event Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Website Header -->
+    <header class="site-header">
+
+        <a class="brand" href="index.html">
+            Campus Event Portal
+        </a>
+
+        <!-- Navigation Bar -->
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="dashboard.html">Organizer</a>
+            <a href="registration.html">Register</a>
+            <a href="about.html">About</a>
+            <a class="nav-button active-button" href="login.html">
+                Login
+            </a>
+        </nav>
+
+    </header>
+
+    <!-- Main Login Section -->
+    <main class="page-main narrow">
+
+        <div class="page-intro">
+
+            <h1>Student Login</h1>
+
+            <p>
+                Enter an email and password to login.
+            </p>
+        </div>
+
+        <!-- Login Form -->
+        <form id="login-form" class="form-card">
+
+            <label for="login-email">
+                Email address
+            </label>
+
+            <input
+                id="login-email"
+                name="email"
+                type="email"
+                placeholder="Your email address"
+                required
+            >
+
+            <label for="login-password">
+                Password
+            </label>
+
+            <input
+                id="login-password"
+                name="password"
+                type="password"
+                placeholder="Enter your password"
+                required
+                minlength="3"
+            >
+
+            <button class="button" type="submit">
+                Log in
+            </button>
+            <p id="login-message" class="form-message" role="status"></p>
+
+
+        </form>
+
+    </main>
+
+    <!-- Website Footer -->
+    <footer>
+        <p>2026 Campus Event Management Portal</p>
+
+        <a href="about.html">
+            About this website
+        </a>
+    </footer>
+
+</body>
+</html>
+

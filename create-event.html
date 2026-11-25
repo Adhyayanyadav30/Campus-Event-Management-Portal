@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Event | Campus Event Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Website Header -->
+    <header class="site-header">
+
+        <a class="brand" href="index.html">
+            Campus Event Portal
+        </a>
+
+        <!-- Navigation Bar -->
+        <nav aria-label="Main navigation">
+
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+
+            <a class="active" href="dashboard.html">
+                Organizer
+            </a>
+
+        </nav>
+
+    </header>
+
+    <!-- Main Create Event Section -->
+    <main class="page-main narrow">
+
+        <div class="page-intro">
+
+            <h1>Add a new Event</h1>
+
+
+        </div>
+
+        <!-- Create Event Form -->
+        <form class="form-card" id="create-event-form">
+
+            <!-- Event Name -->
+            <label for="event-name">
+                Event name
+            </label>
+
+            <input
+                id="event-name"
+                name="eventName"
+                required
+            >
+
+            <!-- Event Type -->
+            <label for="event-type">
+                Event type
+            </label>
+
+            <select id="event-type" name="eventType">
+
+                <option>Fest</option>
+                <option>Technical</option>
+                <option>Seminar</option>
+                <option>Competition</option>
+                <option>Other</option>
+
+            </select>
+
+            <!-- Event Date and Time -->
+            <label for="event-date">
+                Date and time
+            </label>
+
+            <input
+                id="event-date"
+                name="eventDate"
+                type="datetime-local"
+                required
+            >
+
+            <!-- Event Venue -->
+            <label for="event-venue">
+                Venue
+            </label>
+
+            <input
+                id="event-venue"
+                name="venue"
+                required
+            >
+
+            <!-- Event Description -->
+            <label for="event-description">
+                Description
+            </label>
+
+            <textarea
+                id="event-description"
+                name="description"
+                rows="4"
+                required
+            ></textarea>
+
+            <!-- Eligibility -->
+            <label for="eligibility">
+                Eligibility
+            </label>
+
+            <input
+                id="eligibility"
+                name="eligibility"
+                placeholder="Eg: open to all students"
+            >
+
+            <!-- Registration Limit -->
+            <label for="seat-limit">
+                Registration limit
+            </label>
+
+            <input
+                id="seat-limit"
+                name="seatLimit"
+                type="number"
+                min="1"
+                required
+            >
+
+            <!-- Submit Button -->
+            <button class="button" type="submit">
+                Save event
+            </button>
+            <p id="create-event-message" class="form-message" role="status"></p>
+
+        </form>
+
+    </main>
+
+    <!-- Website Footer -->
+    <footer>
+
+        <p>2026 Campus Event Management Portal</p>
+
+        <a href="dashboard.html">
+            Back to dashboard
+        </a>
+
+    </footer>
+
+</body>
+
+</html>

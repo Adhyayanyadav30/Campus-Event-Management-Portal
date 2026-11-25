@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Organizer Dashboard | Campus Event Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Website Header -->
+    <header class="site-header">
+
+        <a class="brand" href="index.html">
+            Campus Event Portal
+        </a>
+
+        <!-- Navigation Bar -->
+        <nav aria-label="Main navigation">
+
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="registration.html">Register</a>
+
+            <a class="active" href="dashboard.html">
+                Organizer
+            </a>
+
+        </nav>
+
+    </header>
+
+    <!-- Main Dashboard Section -->
+    <main class="page-main">
+
+        <div class="page-intro">
+
+            <h1>Organizer Dashboard</h1>
+
+
+
+            <a class="button" href="create-event.html">
+                Create an event
+            </a>
+
+        </div>
+
+        <!-- Event List Section -->
+        <section class="info-card">
+
+            <h2>Event List</h2>
+
+            <div class="table-wrap">
+
+                <table id="dashboard-events">
+
+                    <!-- Table Headings -->
+                    <thead>
+                        <tr data-event-id="hackathon">
+                            <th>Event</th>
+                            <th>Date</th>
+                            <th>Venue</th>
+                            <th>Registered</th>
+                            <th>Limit</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <!-- Event Details -->
+                    <tbody>
+
+                        <tr data-event-id="spectra">
+                            <td>Hackathon</td>
+                            <td>Nov 15</td>
+                            <td>Block 28 (BYOD rooms)</td>
+                            <td>28</td>
+                            <td>40</td>
+                            <td>Open</td>
+                        </tr>
+
+                        <tr data-event-id="football">
+                            <td>Spectra</td>
+                            <td>Nov 21</td>
+                            <td>Mittal Auditorium</td>
+                            <td>165</td>
+                            <td>200</td>
+                            <td>Open</td>
+                        </tr>
+
+                        <tr>
+                            <td>MNIT vs LPU Football match</td>
+                            <td>Nov 28</td>
+                            <td>Sports Ground</td>
+                            <td>72</td>
+                            <td>80</td>
+                            <td>Almost full</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <!-- Recent Registrations Section -->
+        <section class="info-card">
+
+            <h2>Recent Registrations</h2>
+
+            <div class="table-wrap">
+
+                <table>
+
+                    <!-- Table Headings -->
+                    <thead>
+                        <tr>
+                            <th>Student</th>
+                            <th>Student ID</th>
+                            <th>Event</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <!-- Registration Details -->
+                    <tbody id="dashboard-registrations">
+
+                        <tr>
+                            <td>Adhyayan Yadav</td>
+                            <td>1260xx</td>
+                            <td>Spectra</td>
+                            <td>Registered</td>
+                        </tr>
+
+                        <tr>
+                            <td>Reyan</td>
+                            <td>1256xx</td>
+                            <td>Hackathon</td>
+                            <td>Pending...</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <!-- Notifications Section -->
+        <section class="info-card">
+
+            <h2>Live Happenings</h2>
+
+            <ul id="dashboard-notifications">
+
+                <li>
+                    Registration received for Spectra.
+                </li>
+
+                <li>
+                    Spectra is nearly full.
+                </li>
+
+            </ul>
+
+            
+
+        </section>
+
+        
+
+    </main>
+
+    <!-- Website Footer -->
+    <footer>
+
+        <p>2026 Campus Event Management Portal</p>
+
+        <a href="events.html">
+            View events
+        </a>
+
+         <a href="about.html">
+            About this website
+        </a>
+
+    </footer>
+
+</body>
+
+</html>

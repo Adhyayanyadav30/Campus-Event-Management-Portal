@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register | Campus Event Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Website Header -->
+    <header class="site-header">
+
+        <a class="brand" href="index.html">
+            Campus Event Portal
+        </a>
+
+        <!-- Navigation Bar -->
+        <nav aria-label="Main navigation">
+
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="dashboard.html">Organizer</a>
+
+            <a class="active" href="registration.html">
+                Register
+            </a>
+
+            <a href="about.html">About</a>
+
+            <a class="nav-button" href="login.html">
+                Login
+            </a>
+
+        </nav>
+
+    </header>
+
+    <!-- Main Registration Section -->
+    <main class="page-main narrow">
+
+        <div class="page-intro">
+
+            <h1>Event Registration</h1>
+
+            <p>
+                Fill up the form
+            </p>
+
+        </div>
+
+        <!-- Selected Event Information -->
+        <div class="info-card" id="selected-event-info">
+
+            <strong>
+                Selected event: Hackathon
+            </strong>
+
+            <p>
+                Date: November 15, 2026 : Place: BYOD rooms in Block 28
+            </p>
+
+            <p>
+                Seats available: 12 of 40
+            </p>
+
+        </div>
+
+        <!-- Student Registration Form -->
+        <form class="form-card" id="registration-form">
+
+            <!-- Student Name -->
+            <label for="student-name">
+                Full name
+            </label>
+
+            <input
+                id="student-name"
+                name="name"
+                type="text"
+                placeholder="Your name"
+                required
+                minlength="2"
+            >
+
+            <!-- Student Email -->
+            <label for="student-email">
+                Email address
+            </label>
+
+            <input
+                id="student-email"
+                name="email"
+                type="email"
+                placeholder="Your email address"
+                required
+            >
+
+            <!-- Student ID -->
+            <label for="student-id">
+                Student ID
+            </label>
+
+            <input
+                id="student-id"
+                name="studentId"
+                type="text"
+                placeholder="Your student ID"
+                required
+            >
+
+            <!-- Event Selection -->
+            <label for="event-choice">
+                Choose an event
+            </label>
+
+            <select
+                id="event-choice"
+                name="event"
+                required
+            >
+
+                <option value="">
+                    Events to be selected
+                </option>
+
+                <option value="hackathon">Hackathon</option>
+                <option value="spectra">Spectra</option>
+                <option value="football">MNIT vs LPU Football Match</option>
+                <option value="debate">Frank Anthony Debate Competition</option>
+
+            </select>
+
+            <!-- Submit Button -->
+            <button class="button" type="submit">
+                Submit
+            </button>
+
+            <p class="form-note">Demo: registration information is saved only in this browser.</p>
+            <p id="registration-message" class="form-message" role="status"></p>
+
+        </form>
+
+    </main>
+
+    <!-- Website Footer -->
+    <footer>
+
+        <p>2026 Campus Event Management Portal</p>
+
+        <a href="about.html">
+            About this website
+        </a>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Events | Campus Event Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Website Header -->
+    <header class="site-header">
+
+        <a class="brand" href="index.html">
+            Campus Event Portal
+        </a>
+
+        <!-- Navigation Bar -->
+        <nav aria-label="Main navigation">
+
+            <a href="index.html">Home</a>
+
+            <a class="active" href="events.html">
+                Events
+            </a>
+            <a href="dashboard.html">Organizer</a>
+
+            <a href="registration.html">Register</a>
+            <a href="about.html">About</a>
+
+            <a class="nav-button" href="login.html">
+                Login
+            </a>
+
+        </nav>
+
+    </header>
+
+    <!-- Main Events Section -->
+    <main class="page-main">
+
+        <div class="page-intro">
+
+            <h1>Events</h1>
+
+            <p>
+                Upcoming college events.
+            </p>
+
+        </div>
+
+        <div class="filter-row">
+            <label for="event-filter">Filter events:</label>
+            <select id="event-filter">
+                <option value="all">All events</option>
+                <option value="Workshop">Workshop</option>
+                <option value="Technical">Technical</option>
+                <option value="Cultural">Cultural</option>
+                <option value="Sports">Sports</option>
+                <option value="Competition">Competition</option>
+            </select>
+        </div>
+
+        <!-- Event Cards -->
+        <div class="card-grid event-list">
+
+            <!-- Event 1: Workshop -->
+            <article class="event-card" data-event-id="hackathon" data-category="Technical">
+
+                <div class="event-date">
+                    <strong>15</strong>
+                    <span>NOV</span>
+                </div>
+
+                <div class="event-info">
+
+                    <span class="tag">Workshop</span>
+
+                    <h2>Hackathon</h2>
+
+                    <p>
+                        Code your way.
+                    </p>
+
+                    <p class="event-meta">
+                        Block 28 (BYOD rooms) : 2:00 PM : Seats: 12 / 40 available
+                    </p>
+
+                    <a href="event-details.html#design">
+                        More details
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Event 2: Cultural Event -->
+            <article class="event-card" data-event-id="spectra" data-category="Cultural">
+
+                <div class="event-date date-green">
+                    <strong>21</strong>
+                    <span>NOV</span>
+                </div>
+
+                <div class="event-info">
+
+                    <span class="tag tag-green">Cultural</span>
+
+                    <h2>Spectra</h2>
+
+                    <p>
+                        Enjoy Cultural performances planned by our University's Students
+                    </p>
+
+                    <p class="event-meta">
+                        Mittal Auditorium : 4:00 PM : Seats: 35 / 200 available
+                    </p>
+
+                    <a href="event-details.html#fest">
+                        More details
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Event 3: Sports -->
+            <article class="event-card" data-event-id="football" data-category="Sports">
+
+                <div class="event-date date-orange">
+                    <strong>28</strong>
+                    <span>NOV</span>
+                </div>
+
+                <div class="event-info">
+
+                    <span class="tag tag-orange">Sports</span>
+
+                    <h2>MNIT vs LPU Football Match</h2>
+
+                    <p>
+                        Come and support our college football team
+                    </p>
+
+                    <p class="event-meta">
+                        University's Sports Ground : 7:30 PM : Seats: 8 / 80 available
+                    </p>
+
+                    <a href="event-details.html#football">
+                        More details
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Event 4: Public Speaking Workshop -->
+            <article class="event-card" data-event-id="debate" data-category="Competition">
+
+                <div class="event-date date-purple">
+                    <strong>04</strong>
+                    <span>DEC</span>
+                </div>
+
+                <div class="event-info">
+
+                    <span class="tag tag-purple">Workshop</span>
+
+                    <h2>Frank Anthony Debate Competiton</h2>
+
+                    <p>
+                        A battle fought with just words
+                    </p>
+
+                    <p class="event-meta">
+                       Mittal Auditorium : 10:00 AM : Seats: 70 / 200 available
+                    </p>
+
+                    <a href="event-details.html#speaking">
+                        More details
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <p>2026 Campus Event Management Portal</p>
+
+        <a href="about.html">
+            About this website
+        </a>
+
+    </footer>
+
+</body>
+</html>
